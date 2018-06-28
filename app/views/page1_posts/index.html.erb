@@ -1,0 +1,36 @@
+<% provide(:page_title , 'All posts') %>
+<p id="notice"><%= notice %></p>
+
+<h1>Page1 Posts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Body</th>
+      <th>Description</th>
+      <th>Image</th>
+      <th>Slug</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @page1_posts.each do |page1_post| %>
+      <tr>
+        <td><%= page1_post.title %></td>
+        <td><%= page1_post.body %></td>
+        <td><%= page1_post.description %></td>
+        <td><%= page1_post.image %></td>
+        <td><%= page1_post.slug %></td>
+        <td><%= link_to 'Show', page1_post %></td>
+        <td><%= link_to 'Edit', edit_page1_post_path(page1_post) %></td>
+        <td><%= link_to 'Destroy', page1_post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Page1 Post', new_page1_post_path %>

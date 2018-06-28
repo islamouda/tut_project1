@@ -1,0 +1,30 @@
+<% provide(:page_title , @page1_post.title) %>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @page1_post.title %>
+</p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @page1_post.body %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @page1_post.description %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @page1_post.image %>
+</p>
+
+<p>
+  <strong>Slug:</strong>
+  <%= @page1_post.slug %>
+</p>
+
+<%= link_to 'Edit', edit_page1_post_path(@page1_post) %> |
+<%= link_to 'Back', page1_posts_path %>

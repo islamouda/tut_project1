@@ -1,0 +1,8 @@
+<% provide(:page_title , "Edit #{@page1_post.title}") %>
+
+<h1>Editing Page1 Post</h1>
+
+<%= render 'form', page1_post: @page1_post %>
+
+<%= link_to 'Show', @page1_post %> |
+<%= link_to 'Back', page1_posts_path %>
