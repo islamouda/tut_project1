@@ -1,4 +1,16 @@
 <% provide(:page_title , 'All posts') %>
+
+<div class="row">
+ <%= render  @page1_posts %> 
+</div>
+
+
+
+
+
+<%
+=begin %>
+
 <p id="notice"><%= notice %></p>
 
 <h1>Page1 Posts</h1>
@@ -32,5 +44,9 @@
 </table>
 
 <br>
+
+<%= link_to 'New Page1 Post', new_page1_post_path %>
+<%
+=end %>
 
 <%= link_to 'New Page1 Post', new_page1_post_path %>
