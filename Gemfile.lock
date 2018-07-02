@@ -195,7 +195,7 @@ DEPENDENCIES
   friendly_id (~> 5.2, >= 5.2.4)
   jbuilder (~> 2.5)
   mysql2 (>= 0.4.4, < 0.6.0)
-  paperclip (~> 6.0)
+  paperclip (~> 6.0.0)
   puma (~> 3.11)
   rails (~> 5.2.0)
   sass-rails (~> 5.0)
